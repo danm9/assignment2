@@ -1,0 +1,39 @@
+h1 {
+    color: #2325ce;
+    font-weight: bold;
+}
+
+.input-form {
+    max-width: 600px;
+    border-radius: 5px;
+    background-color: #d5d6f8;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+button[type=button] {
+    background-color: #2b8818;
+    font-weight: bold;
+    color: #ffffff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;}
+    button[type=button]:hover {
+        background-color: #143f0b;
+}
+
+input[type=reset] {
+    background-color: #ce3434;
+    font-weight: bold;
+    color: #ffffff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;}
+    input[type=reset]:hover {
+        background-color: #5c1b1b;
+}
+
+.result {
+    text-align: center;
+}
+

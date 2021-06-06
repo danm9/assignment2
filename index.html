@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel='stylesheet' type='text/css' href='style.css'>
+    <script type="text/javascript" src="main.js"></script>
+</head>
+<body>
+    <h1 class="text-center">BMI Table</h1>
+    <br>
+    <p class="text-center">The following table will give an individual's Body Mass Index (BMI)</p>
+
+    <div class="input-form">
+        <form> 
+            <!--Height -->
+            <div class="input-group mb-3">
+                <span class="input-group-text">Height</span>
+                <input 
+                    type="number" 
+                    class="form-control" 
+                    placeholder="5" 
+                    aria-label="height-ft" 
+                    aria-describedby="height-ft" 
+                    id="heightFt"
+                >
+                <span class="input-group-text">ft</span>
+                <input 
+                    type="number" 
+                    class="form-control" 
+                    placeholder="10" 
+                    aria-label="height-in" 
+                    aria-describedby="height-in" 
+                    id="heightIn"
+                >
+                <span class="input-group-text">in</span>
+            </div>
+            <!--Weight -->
+            <div class="input-group mb-3">
+                <span class="input-group-text">Weight</span>
+                <input 
+                    type="number" 
+                    class="form-control" 
+                    placeholder="150" 
+                    aria-label="weight" 
+                    aria-describedby="weight" 
+                    id="weight"
+                >
+            </div>
+            <!--Button & Output -->
+            <div class="d-flex justify-content-between">
+                <button type="button" class="button align-self-start" onclick="calculateBmi(
+                    document.getElementById('heightFt').value,
+                    document.getElementById('heightIn').value,
+                    document.getElementById('weight').value)">Calculate
+                </button>             
+                <input class="button align-self-start" type="reset" value="Clear" onClick="Clear()"/>
+            </div>
+            <p id="bmiTable" class="output align-self-center"></p>
+        </form>
+    </div>
+    
+</body>
+</html>
